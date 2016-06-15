@@ -1,0 +1,16 @@
+User
+username [presence,unique,length]
+email [presence, unique, format]
+password [presence, length]
+has_many posts
+has_many comments through posts
+
+Post
+title [presence]
+link [presence]
+has_many comments
+belongs_to user
+
+Comment
+body [presence]
+belongs_to post
