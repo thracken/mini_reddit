@@ -14,3 +14,4 @@ belongs_to user
 Comment
 body [presence]
 belongs_to post
+belogns_to user
